@@ -34,13 +34,7 @@ const Login = () => {
         setValues({
           ...values,
           status: response.status,
-          mesasge: response.messsage,
-        });
-      } else {
-        setValues({
-          ...values,
-          status: "fail",
-          mesasge: "Invalid input data",
+          message: response.message,
         });
       }
     });
